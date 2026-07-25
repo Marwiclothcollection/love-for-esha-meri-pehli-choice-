@@ -36,3 +36,23 @@ heart.remove();
 },5000);
 
 },300);
+const images = [
+"images/esha1.jpg",
+"images/esha2.jpg",
+"images/esha3.jpg",
+"images/shan1.jpg"
+];
+
+let current = 0;
+
+setInterval(function(){
+
+current++;
+
+if(current >= images.length){
+current = 0;
+}
+
+document.getElementById("slider").src = images[current];
+
+},2500);
